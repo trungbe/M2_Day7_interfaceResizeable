@@ -39,8 +39,9 @@ public class Square extends Rectangle implements Resizeable {
 
     @Override
     public void resize(double percent) {
-        super.setWidth(super.getWidth() + (super.getWidth() / 100 * percent));
 
+        super.setWidth(super.getWidth() + (super.getWidth() / 100 * percent));
+        super.setLength(super.getLength() + (super.getLength() / 100 * percent));
     }
 
 }

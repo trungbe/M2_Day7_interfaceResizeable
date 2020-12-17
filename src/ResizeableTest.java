@@ -8,8 +8,15 @@ public class ResizeableTest {
         System.out.println("-------------------");
 
         Square square = new Square("black",true,5.8);
-        System.out.println(square);
+        System.out.println(square.getArea());
         square.resize(40);
-        System.out.println(square);
+        System.out.println(square.getArea());
+
+        System.out.println("-------------------");
+
+        Rectangle rectangle =new Rectangle(8,2);
+        System.out.println(rectangle.getArea());
+        rectangle.resize(60);
+        System.out.println(rectangle.getArea());
     }
 }
